@@ -104,11 +104,13 @@ public class TaskListFrag extends Fragment {
             holder.mTextViwState.setText(task.getState());
 
             if (mTasks.indexOf(task) % 2 == 0) {
-                holder.mTextViwState.setBackgroundColor(Color.rgb(152, 68, 158));
-                holder.mTextViewName.setBackgroundColor(Color.rgb(152, 68, 158));
+                holder.itemView.setBackgroundColor(Color.rgb(152, 68, 158));
+           /*     holder.mTextViwState.setBackgroundColor(Color.rgb(152, 68, 158));
+                holder.mTextViewName.setBackgroundColor(Color.rgb(152, 68, 158));*/
             } else {
-                holder.mTextViwState.setBackgroundColor(Color.rgb(250, 134, 202));
-                holder.mTextViewName.setBackgroundColor(Color.rgb(250, 134, 202));
+                holder.itemView.setBackgroundColor(Color.rgb(250, 134, 202));
+               /* holder.mTextViwState.setBackgroundColor(Color.rgb(250, 134, 202));
+                holder.mTextViewName.setBackgroundColor(Color.rgb(250, 134, 202));*/
             }
         }
 
